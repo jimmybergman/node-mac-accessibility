@@ -1,0 +1,17 @@
+{
+  "name": "node-mac-accessibility",
+  "version": "1.0.0",
+  "description": "Allow querying if the process is trusted for the MacOS accessibility API",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-gyp rebuild",
+    "install": "node-gyp rebuild"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimmybergman/node-mac-accessibility.git"
+  },
+  "author": "Jimmy Bergman",
+  "license": "MIT",
+  "gypfile": true
+}

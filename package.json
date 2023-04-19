@@ -1,6 +1,6 @@
 {
   "name": "node-mac-accessibility",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Allow querying if the process is trusted for the MacOS accessibility API",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
   "author": "Jimmy Bergman",
   "license": "MIT",
   "gypfile": true,
-  "devDependencies": {
+  "dependencies": {
     "run-script-os": "^1.1.6"
   }
 }

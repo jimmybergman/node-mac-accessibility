@@ -1,10 +1,12 @@
 {
   "name": "node-mac-accessibility",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Allow querying if the process is trusted for the MacOS accessibility API",
   "main": "index.js",
   "scripts": {
-    "build": "(node -e 'process.exit(process.platform===\"darwin\" ? 0 : 1)' && node-gyp rebuild) || echo Skipping build",
+    "build": "run-script-os",
+    "build:darwin": "node-gyp rebuild",
+    "build:default": "echo Skipping build",
     "install": "npm run build"
   },
   "repository": {
@@ -13,5 +15,8 @@
   },
   "author": "Jimmy Bergman",
   "license": "MIT",
-  "gypfile": true
+  "gypfile": true,
+  "devDependencies": {
+    "run-script-os": "^1.1.6"
+  }
 }

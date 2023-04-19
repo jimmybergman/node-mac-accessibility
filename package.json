@@ -1,11 +1,11 @@
 {
   "name": "node-mac-accessibility",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Allow querying if the process is trusted for the MacOS accessibility API",
   "main": "index.js",
   "scripts": {
-    "build": "node-gyp rebuild",
-    "install": "node-gyp rebuild"
+    "build": "(node -e 'process.exit(process.platform===\"darwin\" ? 0 : 1)' && node-gyp rebuild) || echo Skipping build",
+    "install": "npm run build"
   },
   "repository": {
     "type": "git",
